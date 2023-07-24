@@ -1,0 +1,8 @@
+p {
+    color:darkgreen;
+    font-weight: bolder;
+    font-size: larger;
+    font-style: oblique;
+}
+
+/* p是選擇器，color是屬性名稱，darkgreen是屬性值 */

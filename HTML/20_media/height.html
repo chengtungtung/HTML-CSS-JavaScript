@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 網頁有分視窗高度跟網頁高度，機器人分辨不出來你要視窗高度還是網頁高度 */
+        img{
+            height: 50%;
+        }
+        /* 相對於父元素的高度的50% */
+
+        div{
+            height: 500px;
+            background-color: aquamarine;
+        }
+        /* div容器的高度為500px，子元素img會隨著父元素變動 */
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./puppy.jpg" >
+        <!-- 網頁有分視窗高度跟網頁高度，機器人分辨不出來你要視窗高度還是網頁高度 -->
+    </div>
+</body>
+</html>

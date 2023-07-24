@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 試著在這裡設定底下css樣式，
+        ##每一個步驟執行完以後，請先查看畫面顏色的變化!! -->
+
+    <style>
+        /* 使用 標籤(tag name) 挑選元素並設定背景底色 */
+        h1 {
+            background-color: darkgreen;
+        }
+
+        /* 使用 .class 挑選元素並設定背景底色和文字顏色 */
+        
+        .pokemon {
+            background-color: darkcyan;
+            /* background-color: darkred !important; */
+        }
+
+
+        /* 使用 #id 挑選元素並設定背景底色 */
+        #pikachu {
+            background-color: yellow;
+        }
+
+        /* 使用 inline style 設定背景底色 */
+
+        /* 使用 !important 設定背景底色 */
+
+        /* 元素屬於兩個或兩個以上的類別 */
+        .ball{
+            background-color: darkmagenta;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <h1 class="pokemon" id="pikachu" style="background-color: darkorange;">皮卡丘</h1>
+    <h1 class="pokemon ball">卡比獸</h1>
+    <h1 class="ball pokemon">小火龍</h1>
+
+    <br><br><br>
+
+    <fieldset>
+        <legend style="color:darkolivegreen;">重點筆記</legend>
+        <ol style="color: darkolivegreen;">
+            <li>優先權比較</li>
+            <ul>
+                <li>!important > inline > ID選擇器 > 類別選擇器(.class) > 類型選擇器(標籤)</li>
+            </ul>
+            <li>如果一個標籤有兩個類別，會看在head的style中的順序，決定顏色</li>
+            <li>CSS失效的可能原因：</li>
+            <ul>
+                <li>打錯字，ex：大小寫</li>
+                <li>語法錯誤</li>
+                <li>路徑錯誤</li>
+                <li>優先權(權重)</li>
+                <li>宣告順序(後蓋前)</li>
+            </ul>
+        </ol>
+    </fieldset>
+</body>
+
+</html>

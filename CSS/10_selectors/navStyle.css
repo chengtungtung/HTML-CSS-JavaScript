@@ -1,0 +1,35 @@
+.navBar {
+    list-style-type: none;
+    text-align: center;
+    background-color: #000000;
+}
+
+.navBar li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.navBar li:hover {
+    background-color: #656565;
+}
+
+.navBar li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.text{
+    list-style-type: none;
+    text-align: center;
+   
+}
+
+.text li {
+   
+   border-style:  solid ;
+   border-color:antiquewhite;
+   display: inline-block;
+   padding: 100px ;
+   height: 500px;
+}

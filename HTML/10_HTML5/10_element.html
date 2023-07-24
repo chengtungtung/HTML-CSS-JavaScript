@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- <!DOCTYPE html> 的DOCTYPE不區分大小寫 -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 編碼的方式 -->
+  </head>
+
+  <body>
+    <!-- <body>裡的是網頁內容 -->
+
+    <!-- 10. 開始標籤到結束標籤 -> 元素 -->
+    <h1>標題1</h1>
+    <h2>標題2</h2>
+    <h3>標題3</h3>
+
+    <body>
+      嗨
+    </body>
+
+    <!-- 20. 元素的屬性 -->
+    <h1 id="content"></h1>
+
+    <!-- id 的屬性值:
+        1. 有區分大小寫
+        2. 至少包含一個字元
+        3. 不能以數字開頭
+        4. 不能包含空格
+        5. 建議不要有符號 
+    
+        id的目的是識別-->
+
+    <!-- 21. 不同元素可能有不同屬性。
+        所以<h1>沒有href屬性，但<a>有href屬性 ex: <a> -->
+    <!-- <a>標籤是超連結
+        href是屬性
+        google是標籤內容，會顯示出來 -->
+    <a href="https://www.google.com">google</a>
+
+    <!-- 22. 元素可以有多個屬性。 ex: <a> -->
+    <a href="https://www.google.com" id="google">google</a>
+
+    <!-- 試試看，
+         元素使用不支援的屬性，是否能達到效果? -->
+
+    <h1 href="https://www.google.com">google</h1>
+    <!-- 結果會沒有效果 -->
+
+    <!-- 23. JS相關屬性 -->
+    <!-- on開頭的屬性就是跟js有關，是事件屬性 -->
+    <!-- onclick="js函式" -->
+    <button onclick="showMsg()">按我!!!</button>
+
+    <!-- 要先宣告定義函式 -->
+    <!-- function 函式名稱() { 要做的事情 }-->
+    <script>
+      function showMsg() {
+        alert("hello");
+      }
+    </script>
+    <br /><br /><br />
+    <fieldset>
+      <legend style="color: darkolivegreen">重點筆記</legend>
+      <ol style="color: darkolivegreen">
+        <li>
+          快捷鍵
+          <ul>
+            <li>Shift + Alt + 向下鍵 => 複製後方下面</li>
+            <li>Alt + 向下鍵 => 可以移動單行</li>
+            <li>Shift + Alt + F => 整理格式</li>
+          </ul>
+        </li>
+        <li>
+          id 的屬性值:(id的目的是識別)
+          <ul>
+            <li>有區分大小寫</li>
+            <li>至少包含一個字元</li>
+            <li>不能以數字開頭</li>
+            <li>不能包含空格</li>
+            <li>建議不要有符號</li>
+          </ul>
+        </li>
+
+        <li>
+          不同元素可能有不同屬性：所以&#60;h1&#62;沒有href屬性，但&#60;a&#62;有href屬性
+        </li>
+        <li>元素可以有多個屬性。</li>
+        <li>元素使用不支援的屬性，不會有效果：&#60;h1&#62;沒有href屬性</li>
+        <li>
+          on開頭的屬性就是跟js有關，是事件屬性。ex. onclick="js函式"
+          <ul>
+            <li>要先宣告定義函式</li>
+            <li>function 函式名稱() { 要做的事情 }</li>
+          </ul>
+        </li>
+      </ol>
+    </fieldset>
+    <br /><br /><br /><br /><br /><br />
+  </body>
+</html>

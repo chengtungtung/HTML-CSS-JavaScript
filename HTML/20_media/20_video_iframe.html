@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <!-- 10. <video>: 嵌入影片檔案. ex: media/sayhi.mp4 -->
+    <!-- controls: 控制面板-->
+    <!-- loop: 循環播放-->
+    <!-- muted: 設置靜音-->
+    <!-- autoplay: 自動播放-->
+    <!-- poster: 封面圖片. ex: media/poster.png -->
+    <video src="./media/sayhi.mp4" controls muted loop poster="./media/poster.png"></video>
+    <p>
+        chrome瀏覽器中要使用autoplay的話一開始一定要是靜音模式<br>
+        想使用poster封面圖片，那就不能用autoplay
+    </p>
+    <!-- 關於autoplay屬性: -->
+    <!-- https://developer.chrome.com/blog/autoplay -->
+
+
+    <!-- 20. 透過 <iframe> 嵌入 youtube 影片. 
+         ex: https://youtu.be/ewZ_YWbIWXI -->
+    <!-- 在 youtube 影片上點右鍵 -> 複製嵌入程式碼 -->
+
+    <iframe width="893" height="502" src="https://www.youtube.com/embed/ewZ_YWbIWXI"
+        title="W3Schools HTML Tutorial 01 - Introduction" frameborder="1"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    <!-- frameborder改成1的話會有框 -->
+
+    <iframe width="893" height="502" src="https://www.youtube.com/embed/rrXobXg73ec"
+        title="Pistol - Cigarettes After Sex" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen ></iframe>
+
+</body>
+
+</html>

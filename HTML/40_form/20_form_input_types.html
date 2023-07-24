@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <!-- 參照 20_form_input_types_完成圖.png 製作一份表單 -->
+
+    <!-- step1: 標題 -->
+    <h2>通勤工具使用調查</h2>
+    <!-- step2: 加入一個表單 <form> -->
+    <form action=""></form>
+    <!-- form的action是要給後端看的 -->
+
+
+    <!-- step3. 在<form>表單內 加入 <fieldset> 群組標籤 
+                和 <legend> 並給予說明 -->
+    <fieldset>
+        <legend>基本資料</legend>
+
+        <!-- legend不能單獨存在，要在fieldset裡面 -->
+        <!-- step4. 在表單 <form> 內加入 姓名 <label> 
+                和 輸入欄位 <input type="text"> -->
+        <label for="name">姓名：</label>
+        <input type="text" id="name">
+        <!-- type的用處是讓使用者在手機使用時，可以有不同的鍵盤 -->
+        <br>
+        <!-- step5. 在表單 <form> 內加入 電話 <label> 
+                和 輸入欄位 <input type="tel"> -->
+        <label for="usertel">電話：</label>
+        <input type="tel" id="usertel">
+
+    </fieldset>
+
+    <!-- step6. 加入 職業 和 <input type="radio"> -->
+    職業：
+    <input type="radio" id="student" name="job">
+    <label for="student">學生</label>
+    <input type="radio" id="teacher" name="job">
+    <label for="teacher">老師</label>
+    <input type="radio" id="other" name="job">
+    <label for="other">其他</label>
+
+    <!-- name可以群組化，讓"學生""老師""其他"變成同一組，用name有個重點是要給後端看-->
+    <br>
+    <!-- step7. 加入 交通工具 和 <input type="checkbox">，
+                    步驟和 step6. 類似 -->
+    交通工具：
+    <input type="checkbox" id="bike" name="pt">
+    <label for="bike">腳踏車</label>
+    <input type="checkbox" id="scooter" name="pt">
+    <label for="scooter">機車</label>
+    <br><br><br>
+    <h3 style="color: red;">重點筆記：</h3>
+    <ol style="color: red;">
+        <li>form的action是要給後端看的</li>
+        <li>legend不能單獨存在，要在fieldset裡面</li>
+        <li>type的用處是讓使用者在手機使用時，可以有不同的鍵盤</li>
+        <li>name可以群組化，讓"學生""老師""其他"變成同一組，用name有個重點是要給後端看</li>
+    </ol>
+
+    </form>
+
+
+
+
+</body>
+
+</html>
